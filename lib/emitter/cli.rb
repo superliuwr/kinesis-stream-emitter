@@ -7,11 +7,11 @@ module Emitter
     option :data, :required => true, :aliases => :d
     option :zip, :type => :boolean, :default => false, :aliases => :z
     desc "emitter", "AWS Kinesis Stream testing data producer"
-    def produce()
+    def emit()
       puts options[:stream]
       puts options[:data]
       puts options[:zip]
-      puts Emitter.hello
+      puts Emitter.emit
     end
   end
 end
