@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A mock Kinesis Stream producer to generate testing data.}
   spec.description   = %q{For testing only.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/superliuwr/kinesis-stream-emitter"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
