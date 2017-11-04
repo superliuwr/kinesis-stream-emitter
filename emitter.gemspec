@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Marvin Liu"]
   spec.email         = ["superliuwr@gmail.com"]
 
-  spec.summary       = %q{A mock Kinesis Stream producer to generate testing data.}
+  spec.summary       = %q{A mock AWS Kinesis Stream producer to generate testing data.}
   spec.description   = %q{For testing only.}
   spec.homepage      = "https://github.com/superliuwr/kinesis-stream-emitter"
   spec.license       = "MIT"
@@ -33,4 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+
+  spec.add_runtime_dependency "thor"
 end

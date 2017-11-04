@@ -1,5 +1,7 @@
 require "emitter/version"
 
 module Emitter
-  # Your code goes here...
+  def self.hello
+    puts "Hello!"
+  end
 end
