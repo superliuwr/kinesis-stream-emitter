@@ -5,6 +5,11 @@ module Emitter
   def self.emit
     puts "Hello!"
 
+    if File.exist?("/users/marvin/playground/test.json")
+      data = File.read("/users/marvin/playground/test.json")
+      puts data
+    end
+
     client = Aws::Kinesis::Client.new
     resp = client.put_record({
       stream_name: "StreamName", # required
