@@ -1,4 +1,5 @@
 class Reader
+
   attr_reader :file_path
 
   def initialize(file_path)
@@ -6,9 +7,16 @@ class Reader
   end
 
   def read
-    if File.exist?("/users/marvin/playground/test.json")
-      data = File.read("/users/marvin/playground/test.json")
-      puts data
-    end
+      File.read(file_path)
   end
+
+  def validate?
+    if !File.exist?(file_path)
+      puts 'Invalid data file'
+      return false
+    end
+
+    return true
+  end
+
 end
